@@ -15,14 +15,14 @@ import { provideEnvironmentNgxMask, NgxMaskDirective } from 'ngx-mask';
     TabComponent,
     InputComponent,
   ],
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, NgxMaskDirective],
   exports: [
     ModalComponent,
     TabsContainerComponent,
     TabComponent,
     InputComponent,
   ],
-  providers: [],
+  providers: [provideEnvironmentNgxMask()],
   // providers: [ModalService],
 })
 export class SharedModule {}
